@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Pelaaja.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">kivipaperisakset</a> &gt; <a href="index.source.html" class="el_package">kivipaperisakset</a> &gt; <span class="el_source">Pelaaja.java</span></div><h1>Pelaaja.java</h1><pre class="source lang-java linenums">package kivipaperisakset;
+
+/**
+ * Luokka edustaa kivi-paperi-sakset -pelin pelaajaa.
+ * Pelaaja voi valita kiven, paperin tai sakset ja pitää kirjaa voitoistaan.
+ * @author Aman Mughal
+ */
+public class Pelaaja {
+
+    private int voitot; // Pelaajan voittojen lukumäärä
+
+    /**
+     * Luo uuden pelaajan.
+     */
+<span class="fc" id="L15">    public Pelaaja() {</span>
+<span class="fc" id="L16">        this.voitot = 0;</span>
+<span class="fc" id="L17">    }</span>
+
+    /**
+     * Valitsee satunnaisesti kiven, paperin tai sakset.
+     * 
+     * @return Pelaajan valinta merkkijonona.
+     */
+    public String pelaajanValinta() {
+<span class="fc" id="L25">        String valinta = &quot;&quot;;</span>
+<span class="fc" id="L26">        int c = (int) (Math.random() * 3);</span>
+<span class="pc bpc" id="L27" title="3 of 4 branches missed.">        switch (c) {</span>
+            case 0:
+<span class="fc" id="L29">                valinta = &quot;kivi&quot;;</span>
+<span class="fc" id="L30">                break;</span>
+            case 1:
+<span class="nc" id="L32">                valinta = &quot;paperi&quot;;</span>
+<span class="nc" id="L33">                break;</span>
+            case 2:
+<span class="nc" id="L35">                valinta = &quot;sakset&quot;;</span>
+                break;
+        }
+<span class="fc" id="L38">        return valinta;</span>
+    }
+
+    /**
+     * Lisää yhden voiton pelaajan voittojen kokonaismäärään.
+     */
+    public void lisaaVoitto() {
+<span class="fc" id="L45">        this.voitot++;</span>
+<span class="fc" id="L46">    }</span>
+
+    /**
+     * Palauttaa pelaajan voittojen kokonaismäärän.
+     * 
+     * @return Pelaajan voittojen lukumäärä.
+     */
+    public int getVoitot() {
+<span class="fc" id="L54">        return this.voitot;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

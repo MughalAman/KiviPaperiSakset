@@ -1,7 +1,6 @@
 package test;
 
 import kivipaperisakset.Peli;
-import kivipaperisakset.Pelaaja;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

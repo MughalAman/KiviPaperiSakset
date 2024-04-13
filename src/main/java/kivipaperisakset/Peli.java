@@ -57,7 +57,7 @@ public class Peli {
      * @param p2Valinta Toisen pelaajan valinta
      * @return Palauttaa merkkijonon "p1" jos ensimmäinen pelaaja voittaa, "p2" jos toinen pelaaja voittaa, tai tyhjän merkkijonon tasapelin tapauksessa.
      */
-    private static String kukaVoittaa(String p1Valinta, String p2Valinta) {
+    public static String kukaVoittaa(String p1Valinta, String p2Valinta) {
         if ((p1Valinta.equals("kivi") && p2Valinta.equals("sakset")) ||
             (p1Valinta.equals("sakset") && p2Valinta.equals("paperi")) ||
             (p1Valinta.equals("paperi") && p2Valinta.equals("kivi"))) {

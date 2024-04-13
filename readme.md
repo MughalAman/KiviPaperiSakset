@@ -33,4 +33,5 @@
 - **Koodin selkeyden parantaminen**: Eriyttämällä pelilogiikka omiin metodeihinsa, koodista on tehty selkeämpää ja helpommin ymmärrettävää.
 - **Testattavuuden parantaminen**: Muutokset mahdollistavat yksikkötestien kirjoittamisen, mikä parantaa ohjelman laatua ja vähentää virheiden määrää.
 - **Dokumentaation lisääminen**: Lisätty ja päivitetty Javadoc-kommentteja, mikä parantaa koodin dokumentaatiota ja helpottaa sen ymmärtämistä.
-
+- **Rakenteen selkeyttäminen**: Koodin rakennetta on selkeytetty ja refaktoroitu, mikä helpottaa sen ylläpitoa ja jatkokehitystä.
+- **Muutettu maven projektiksi**: Lisätty `pom.xml`-tiedosto, joka mahdollistaa projektin rakentamisen ja riippuvuuksien hallinnan Mavenin avulla.
